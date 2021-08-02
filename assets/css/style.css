@@ -150,7 +150,7 @@ body{
     float: left;
     text-align: center;
     text-transform: capitalize;
-    font-size:  40px; 
+    font-size:  36px; 
     line-height: 62px;
 }
 @media (max-width: 575.98px) {
@@ -169,6 +169,35 @@ body{
     .main-title{
         width: 80%;
         font-size: 32px;
+    }
+}
+
+.line{
+    display: block;
+    background: var(--mainColor);
+    margin: auto;
+    width: 180px;
+    height: 3px;
+}
+@media (max-width: 575.98px) {
+    .line{
+        margin: 0px 70px;
+        width: 250px;
+        height: 3px;
+    }  
+}
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .line{
+        margin: 0px 80px;
+        width: 300px;
+        height: 3px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .line{
+        margin: 0px 120px;
+        width: 360px;
+        height: 3px;
     }
 }
 .title-img{
@@ -206,34 +235,6 @@ body{
     .title-img .img{
         height: 110px;
         width:  110px;
-    }
-}
-.line{
-    display: block;
-    background: var(--mainColor);
-    margin: -10px 410px;
-    width: 430px;
-    height: 3px;
-}
-@media (max-width: 575.98px) {
-    .line{
-        margin: 0px 70px;
-        width: 250px;
-        height: 3px;
-    }  
-}
-@media (min-width: 576px) and (max-width: 767.98px) { 
-    .line{
-        margin: 0px 80px;
-        width: 300px;
-        height: 3px;
-    }
-}
-@media (min-width: 768px) and (max-width: 991.98px) { 
-    .line{
-        margin: 0px 120px;
-        width: 360px;
-        height: 3px;
     }
 }
 .header .overlay{
@@ -605,6 +606,9 @@ font-size: 25px;
         font-size: 29px;
     }
 }
+.form{
+    margin: auto;
+}
 .form-input{
  width: 600px;
  height: 40px;
@@ -764,5 +768,6 @@ font-size: 25px;
     letter-spacing: 3px;
     word-spacing: 3px;
     font-family: secFont;
+    font-size: 10px;
 }
 /*end footer*/
